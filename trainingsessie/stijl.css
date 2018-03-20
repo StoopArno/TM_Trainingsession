@@ -28,7 +28,7 @@
 }
 
 /*Van alle voorbeeld divs een blauwe blok maken*/
-.transition1, .transition2, .translate, .rotate, .scale, .skew, .rotateX{
+ .blokje{
     width: 100px;
     height: 100px;
     background: #009cab
@@ -92,4 +92,30 @@
 
 .rotateX:hover{
     transform: rotateX(150deg) !important;
+}
+
+/*Voorbeelden animaties*/
+.vb-animatie-bgc{
+    animation: animatie-bgc 5s infinite;
+}
+
+@keyframes animatie-bgc{
+    0%{background-color: #546e7a;}
+    25%{background-color: yellow;}
+    50%{background-color: hotpink;}
+    75%{background-color: greenyellow;}
+    100%{background-color: #546e7a;}
+}
+
+.vb-animatie-rot:hover{
+    animation: animatie-rot 4s infinite
+}
+
+@keyframes animatie-rot{
+    0%{transform: rotate(0deg)}
+    25%{transform: rotate(90deg)}
+    40%{transform: rotate(100deg)}
+    50%{transform: rotate(180deg)}
+    75%{transform: rotate(270deg)}
+    100%{transform: rotate(360deg)}
 }
