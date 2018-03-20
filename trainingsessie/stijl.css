@@ -114,8 +114,19 @@
 @keyframes animatie-rot{
     0%{transform: rotate(0deg)}
     25%{transform: rotate(90deg)}
-    40%{transform: rotate(100deg)}
     50%{transform: rotate(180deg)}
     75%{transform: rotate(270deg)}
     100%{transform: rotate(360deg)}
+}
+
+.vb1-animatie{
+    
+}
+
+@keyframes vb1{
+    0%{}
+    25%{}
+    50%{}
+    75%{}
+    100%{}
 }
