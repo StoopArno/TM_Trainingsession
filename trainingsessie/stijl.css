@@ -1,0 +1,95 @@
+/*Smijne css, afblijve!*/
+/*-----*/
+/*kleur van de headers*/
+.header{
+    color: #f04c25
+}
+
+/*Kaartjes lololololol*/
+.foto{
+    transition: 5s !important;
+}
+
+.foto:hover{
+    transform: rotate(50deg) rotateY(70deg) scale(2, 3)!important;
+}
+
+/*Voorbeeld*/
+.twee, .drie{
+    transition: 2s;
+}
+
+.twee:hover{
+    transform: rotate(180deg);
+}
+
+.drie:hover{
+    transform: rotateY(180deg);
+}
+
+/*Van alle voorbeeld divs een blauwe blok maken*/
+.transition1, .transition2, .translate, .rotate, .scale, .skew, .rotateX{
+    width: 100px;
+    height: 100px;
+    background: #009cab
+}
+
+/*Voorbeelden transitions*/
+.transition1{
+    transition: width 2s !important;
+}
+
+.transition1:hover{
+    width: 500px !important;
+}
+
+.transition2{
+    transition: width 2s, height 5s !important;
+}
+
+.transition2:hover{
+    width: 500px !important;
+    height: 300px !important;
+}
+
+/*Voorbeelden 2D Transformations*/
+.translate{
+    transition: 2s !important;
+}
+
+.translate:hover{
+    transform: translate(50px, 100px) !important;
+}
+
+.rotate{
+    transition: 2s !important;
+}
+
+.rotate:hover{
+    transform: rotate(50deg) !important;
+}
+
+.scale{
+    transition: 2s !important;
+}
+
+.scale:hover{
+    transform: scale(3, 6) !important;
+}
+
+.skew{
+    transition: 2s !important;
+}
+
+.skew:hover{
+    transform: skew(50deg, 30deg) !important;
+}
+
+/*Voorbeelden 3D Transformations*/
+.rotateX{
+    transition: 2s !important;
+}
+
+.rotateX:hover{
+    transform: rotateX(150deg) !important;
+}

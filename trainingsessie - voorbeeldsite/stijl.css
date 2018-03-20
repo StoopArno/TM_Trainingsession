@@ -1,0 +1,6 @@
+.transition, .translate, .rotate, .scale, .skew, .rotateX{
+    width: 100px;
+    height: 100px;
+    background: red;
+	margin: 200px;
+}
