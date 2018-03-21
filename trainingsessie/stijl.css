@@ -111,6 +111,7 @@
     animation: animatie-rot 4s infinite
 }
 
+
 @keyframes animatie-rot{
     0%{transform: rotate(0deg)}
     25%{transform: rotate(90deg)}
@@ -119,14 +120,44 @@
     100%{transform: rotate(360deg)}
 }
 
+.vb1-parent{
+    height: 200px;
+}
+
 .vb1-animatie{
-    
+    animation: vb1 3s infinite;
 }
 
 @keyframes vb1{
-    0%{}
-    25%{}
-    50%{}
-    75%{}
-    100%{}
+    0%{transform: translateX(0);}
+    50%{transform: translateX(300px);}
+    100%{transform: translateX(0);}
+}
+
+.oef-animation-1-parent{
+    height: 300px;
+}
+
+.oef-animation-1{
+    animation: oef1 3s infinite;  
+}
+
+@keyframes oef1{
+    0%{transform: none;}
+    25%{
+        transform: translate(600px, 100px) rotate(45deg);
+        
+    }
+    50%{
+        transform: translate(600px, 0px) rotate(90deg);
+        
+    }
+    75%{
+        transform: translate(0px, 100px) rotate(135deg);
+        
+    }
+    100%{
+        transform: translate(0, 0) rotate(180deg);
+        
+    }
 }

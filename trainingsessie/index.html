@@ -292,17 +292,33 @@
                     animation-iteration-count <br><br>
                     animation-direction <br>
                     animtion-timing-function <br>
-                    animation-fill-mode <br></code></p>
+                    animation-fill-mode <br>
+                    animation-play-state</code></p>
                     <p>Zie <a href="https://www.w3schools.com/css/css3_animations.asp">W3schools</a></p>
                 </div>
             </div>
             <div class="row">
-                <h3 class="header">Meer voorbeelden</h3>
-                <div class="col s6">
+                <h3 class="header">Animation + transformation</h3>
+                <div class="col s6 vb1-parent">
                     <div class="blokje vb1-animatie"></div>
                 </div>
                 <div class="col s6">
                     <h4 class="header">Code</h4>
+                    <p><code>
+                        .vb1-animatie{ <br> 
+                        &emsp;animation: vb1 4s infinite; <br>
+                        } <br> <br>
+
+                    @keyframes vb1{ <br>
+                    &emsp;0%{transform: translateX(0);} <br>
+                    &emsp;50%{transform: translateX(300px);} <br>
+                    &emsp;100%{transform: translateX(0);}<br>
+                    }
+                    </code></p>
+                </div>
+                <h4 class="header">Oefening animation</h4>
+                <div class="col s12 oef-animation-1-parent">
+                    <div class="blokje oef-animation-1"></div>
                 </div>
             </div>
         </div>

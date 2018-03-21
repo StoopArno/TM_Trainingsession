@@ -4,3 +4,8 @@
     background: red;
 	margin: 200px;
 }
+
+.animation-parent{
+    width: 600px;
+    height: 300px;
+}
