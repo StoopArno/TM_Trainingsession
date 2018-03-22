@@ -1,45 +1,49 @@
-.blokje{
+.blokje {
     width: 100px;
     height: 100px;
     background: red;
-	margin: 200px;
+    margin: 200px;
 }
 
-.animation-parent{
+.animation-parent {
     width: 600px;
     height: 300px;
 }
 
-
-.wiel {
-	
+.oefening1 {
+    transition: 2s, width 2s, height 1s !important;
 }
 
-.wiel1 {
-	
+.oefening1:hover {
+    transform: rotate(360deg) !important;
+    width: 200px !important;
+    height: 100px !important;
 }
 
-.wiel2 {
-	
+.oefening2 {
+    transition: 2s !important;
 }
 
-.geheel {
-    
-	
+.oefening2:hover {
+    transform: scale(5, 3) skew(20deg, -20deg) translate(50px, 50px) !important;
+
 }
+
+.wiel {}
+
+.wiel1 {}
+
+.wiel2 {}
+
+.geheel {}
 
 #achtergrond {
-    padding-top:120px;
-	height:300px;
-	
-    
+    padding-top: 120px;
+    height: 300px;
+
+
 }
 
-@keyframes oef2-rijden {
-	
-}
+@keyframes oef2-rijden {}
 
-@keyframes oef2-draaien{
-    
-}
-
+@keyframes oef2-draaien {}

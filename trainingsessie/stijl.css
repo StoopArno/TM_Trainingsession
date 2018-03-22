@@ -1,214 +1,264 @@
 /*Smijne css, afblijve!*/
+
 /*-----*/
+
 /*kleur van de headers*/
-.header{
+
+.header {
     color: #f04c25
 }
 
 /*Kaartjes lololololol*/
-.foto{
+
+.foto {
     transition: 5s !important;
 }
 
-.foto:hover{
+.foto:hover {
     transform: rotate(50deg) rotateY(70deg) scale(2, 3)!important;
 }
 
 /*Voorbeeld*/
-.twee, .drie{
+
+.twee,
+.drie {
     transition: 2s;
 }
 
-.twee:hover{
+.twee:hover {
     transform: rotate(180deg);
 }
 
-.drie:hover{
+.drie:hover {
     transform: rotateY(180deg);
 }
 
 /*Van alle voorbeeld divs een blauwe blok maken*/
- .blokje{
+
+.blokje {
     width: 100px;
     height: 100px;
     background: #009cab
 }
 
 /*Voorbeelden transitions*/
-.transition1{
+
+.transition1 {
     transition: width 2s !important;
 }
 
-.transition1:hover{
+.transition1:hover {
     width: 500px !important;
 }
 
-.transition2{
+.transition2 {
     transition: width 2s, height 5s !important;
 }
 
-.transition2:hover{
+.transition2:hover {
     width: 500px !important;
     height: 300px !important;
 }
 
 /*Voorbeelden 2D Transformations*/
-.translate{
+
+.translate {
     transition: 2s !important;
 }
 
-.translate:hover{
+.translate:hover {
     transform: translate(50px, 100px) !important;
 }
 
-.rotate{
+.rotate {
     transition: 2s !important;
 }
 
-.rotate:hover{
+.rotate:hover {
     transform: rotate(50deg) !important;
 }
 
-.scale{
+.scale {
     transition: 2s !important;
 }
 
-.scale:hover{
+.scale:hover {
     transform: scale(3, 6) !important;
 }
 
-.skew{
+.skew {
     transition: 2s !important;
 }
 
-.skew:hover{
+.skew:hover {
     transform: skew(50deg, 30deg) !important;
 }
 
 /*Voorbeelden 3D Transformations*/
-.rotateX{
+
+.rotateX {
     transition: 2s !important;
 }
 
-.rotateX:hover{
+.rotateX:hover {
     transform: rotateX(150deg) !important;
 }
 
 /*Voorbeelden animaties*/
-.vb-animatie-bgc{
+
+.vb-animatie-bgc {
     animation: animatie-bgc 5s infinite;
 }
 
-@keyframes animatie-bgc{
-    0%{background-color: #546e7a;}
-    25%{background-color: yellow;}
-    50%{background-color: hotpink;}
-    75%{background-color: greenyellow;}
-    100%{background-color: #546e7a;}
+@keyframes animatie-bgc {
+    0% {
+        background-color: #546e7a;
+    }
+    25% {
+        background-color: yellow;
+    }
+    50% {
+        background-color: hotpink;
+    }
+    75% {
+        background-color: greenyellow;
+    }
+    100% {
+        background-color: #546e7a;
+    }
 }
 
-.vb-animatie-rot:hover{
+.vb-animatie-rot:hover {
     animation: animatie-rot 4s infinite
 }
 
 
-@keyframes animatie-rot{
-    0%{transform: rotate(0deg)}
-    25%{transform: rotate(90deg)}
-    50%{transform: rotate(180deg)}
-    75%{transform: rotate(270deg)}
-    100%{transform: rotate(360deg)}
+@keyframes animatie-rot {
+    0% {
+        transform: rotate(0deg)
+    }
+    25% {
+        transform: rotate(90deg)
+    }
+    50% {
+        transform: rotate(180deg)
+    }
+    75% {
+        transform: rotate(270deg)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
 }
 
-.vb1-parent{
+.vb1-parent {
     height: 200px;
 }
 
-.vb1-animatie{
+.vb1-animatie {
     animation: vb1 3s infinite;
 }
 
-@keyframes vb1{
-    0%{transform: translateX(0);}
-    50%{transform: translateX(300px);}
-    100%{transform: translateX(0);}
+@keyframes vb1 {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(300px);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
-.oef-animation-1-parent{
+.oef-animation-1-parent {
     height: 300px;
 }
 
-.oef-animation-1{
-    animation: oef1 3s infinite;  
+.oef-animation-1 {
+    animation: oef1 3s infinite;
 }
 
-@keyframes oef1{
-    0%{transform: none;}
-    25%{
+@keyframes oef1 {
+    0% {
+        transform: none;
+    }
+    25% {
         transform: translate(600px, 100px) rotate(45deg);
-        
+
     }
-    50%{
+    50% {
         transform: translate(600px, 0px) rotate(90deg);
-        
+
     }
-    75%{
+    75% {
         transform: translate(0px, 100px) rotate(135deg);
-        
+
     }
-    100%{
+    100% {
         transform: translate(0, 0) rotate(180deg);
-        
+
     }
 }
 
 .wiel {
-	animation-name: oef2-draaien;
-	animation-duration: 0.5s;
-	animation-iteration-count: infinite;
+    animation-name: oef2-draaien;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 
 .wiel1 {
-	position: relative;
-	left: -230px;
-	top: 20px;
+    position: relative;
+    bottom: 35px;
+    left: 30px;
 }
 
 .wiel2 {
-	position: relative;
-	left: -150px;
-	top: 20px;
+    position: relative;
+    bottom: 35px;
+    left: 105px;
 }
 
 .geheel {
     position: relative;
     bottom: 0px;
-	animation-name: oef2-rijden;
-	animation-duration: 2s;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
+    animation-name: oef2-rijden;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    width: 263px;
 }
 
 #achtergrond {
-    padding-top:120px;
-	height:300px;
-	background-image:url(images/achtergrond.jpg);
-	background-repeat:repeat-x;
+    padding-top: 120px;
+    height: 300px;
+    background-image: url(images/achtergrond.jpg);
+    background-repeat: repeat-x;
 }
 
 @keyframes oef2-rijden {
-	0% {
-		transform: translate(0px, 0px);
-	}
-	
-	100% {
-		transform: translate(200px, 0px);
-	}
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    100% {
+        transform: translate(800px, 0px);
+    }
+}
+
+@keyframes oef2-rijden-uitbreiding {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    100% {
+        transform: translate(800px, -20px) rotate(-20deg);
+    }
 }
 
 @keyframes oef2-draaien {
-	to {
-		transform: rotate(360deg);
-	}
+    to {
+        transform: rotate(360deg);
+    }
 }

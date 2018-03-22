@@ -1,5 +1,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="nl" lang="nl">
-    <head>
+
+<head>
     <title>Trainingsessie</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" href="stijl.css" />
@@ -316,10 +317,9 @@
             <div class="col s12 oef-animation-1-parent">
                 <div class="blokje oef-animation-1"></div>
             </div>
-            
-            <p>In deze oefening moet je zorgen dat het blokje 600px naar rechts en 100px naar onder verschuift. Vervolgens gaat het weer 100px naar boven. Daarna gaat het terug 600 naar links en 100 naar onder om daarna terug uit te komen op de oorspronkelijke toestand. <br>
-            Bij elke verplaatsing draait het blokje telkens 90°.</p>
-            
+
+            <p>In deze oefening moet je zorgen dat het blokje 600px naar rechts en 100px naar onder verschuift. Vervolgens gaat het weer 100px naar boven. Daarna gaat het terug 600 naar links en 100 naar onder om daarna terug uit te komen op de oorspronkelijke toestand. <br> Bij elke verplaatsing draait het blokje telkens 45°.</p>
+
             <ul class="collapsible">
                 <li>
                     <div class="collapsible-header">Oplossing</div>
@@ -387,6 +387,11 @@
 	                        &emsp;animation-iteration-count: infinite; <br>
                             } <br>
                             
+                            @keyframes oef2-rijden { <br>
+	                        &emsp;0% {transform: translate(0px, 0px);} <br>
+	                        &emsp;100% {transform: translate(1000px, 0px);} <br>
+                            } <br> <br>
+                            
                             #achtergrond { <br>
                             &emsp;padding-top:120px; <br>
 	                        &emsp;height:300px; <br>
@@ -403,9 +408,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script>
-        $(document).ready(function(){
-    $('.collapsible').collapsible();
-  });
+        $(document).ready(function() {
+            $('.collapsible').collapsible();
+        });
+
     </script>
 </body>
+
 </html>
