@@ -3,14 +3,15 @@
 <head>
     <title>Trainingsessie</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link rel="stylesheet" href="stijl.css" />
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="stijl.css" />
 </head>
 
 <!-- Bleft is uit mijn codebehind pls -->
 
 <body>
+    <!-- header -->
     <header>
         <nav>
             <div class="nav-wrapper">
@@ -25,6 +26,7 @@
         </nav>
     </header>
 
+    <!-- Wie zijn we?-->
     <div class="container">
         <h2 class="header">Wie zijn we?</h2>
 
@@ -57,6 +59,7 @@
             </div>
         </div>
 
+       <!-- Voorbeeld (introductie) -->
         <h2 class="header">Voorbeeld</h2>
 
         <div class="row">
@@ -77,6 +80,7 @@
             </div>
         </div>
 
+       <!-- Transitions -->
         <h2 class="header" id="transitions">Transitions</h2>
 
         <div class="row">
@@ -88,10 +92,10 @@
                 <h3 class="header">CSS</h3>
                 <p><code>
                     .transition{<br>
-                        transition: width 2s ;<br>
-                    }<br>
+                    &emsp;transition: width 2s ;<br>
+                    }<br><br>
                     .transition:hover{<br>
-                        width: 500px;<br>
+                    &emsp;width: 500px;<br>
                     }<br>
                     </code></p>
             </div>
@@ -106,11 +110,11 @@
                 <h3 class="header">CSS</h3>
                 <p><code>
                     .transition{<br>
-                        transition: width 2s, height 5s;<br>
-                    }<br>
+                    &emsp;transition: width 2s, height 5s;<br>
+                    }<br><br>
                     .transition:hover{<br>
-                        width: 500px;<br>
-                        height: 300px;<br>
+                    &emsp;width: 500px;<br>
+                    &emsp;height: 300px;<br>
                     }<br>
                     </code></p>
             </div>
@@ -126,6 +130,7 @@
                 </code></p>
         </div>
 
+       <!-- Transformations -->
         <h2 class="header" id="2D">2D Transformations</h2>
         <h3 class="header">Translate</h3>
 
@@ -138,10 +143,10 @@
                 <h3 class="header">CSS</h3>
                 <p><code>
                     .translate{<br>
-                        transition: 2s;<br>
-                    }<br>
+                    &emsp;transition: 2s;<br>
+                    }<br><br>
                     .translate:hover{<br>
-                        transform: translate(50px, 100px);<br>
+                    &emsp;transform: translate(50px, 100px);<br>
                     }<br>
                     </code></p>
             </div>
@@ -158,10 +163,10 @@
                 <h3 class="header">CSS</h3>
                 <p><code>
                     .rotate{<br>
-                        transition: 2s;<br>
-                    }<br>
+                    &emsp;transition: 2s;<br>
+                    }<br><br>
                     .rotate:hover{<br>
-                        transform: rotate(50deg);<br>
+                    &emsp;transform: rotate(50deg);<br>
                     }<br>
                     </code></p>
             </div>
@@ -178,10 +183,10 @@
                 <h3 class="header">CSS</h3>
                 <p><code>
                     .scale{<br>
-                        transition: 2s;<br>
-                    }<br>
+                    &emsp;transition: 2s;<br>
+                    }<br><br>
                     .scale:hover{<br>
-                        transform: scale(3, 6);<br>
+                    &emsp;transform: scale(3, 6);<br>
                     }<br>
                     </code></p>
             </div>
@@ -194,14 +199,14 @@
                 <div class="skew blokje"></div>
             </div>
 
-            <div class="col s3">
+            <div class="col s4">
                 <h3 class="header">CSS</h3>
                 <p><code>
                     .skew{<br>
-                        transition: 2s;<br>
-                    }<br>
+                    &emsp;transition: 2s;<br>
+                    }<br><br>
                     .skew:hover{<br>
-                        transform: skew(50deg, 30deg);<br>
+                    &emsp;transform: skew(50deg, 30deg);<br>
                     }<br>
                     </code></p>
             </div>
@@ -227,10 +232,10 @@
                 <h3 class="header">CSS</h3>
                 <p><code>
                     .rotateX{<br>
-                        transition: 2s;<br>
-                    }<br>
+                    &emsp;transition: 2s;<br>
+                    }<br><br>
                     .rotateX:hover{<br>
-                        transform: rotateX(140deg);<br>
+                    &emsp;transform: rotateX(140deg);<br>
                     }<br>
                     </code></p>
             </div>
@@ -241,6 +246,90 @@
                     transform: rotateY(Xdeg);
                     transform: rotateZ(Xdeg);
                     </code></p>
+            </div>
+        </div>
+        
+        <!-- Oefeningen -->
+        <h4 class="header">Oefeningen transformations &amp; transitions</h4>
+        
+        <div class="row">       
+            <div class="col s3">
+                <h5 class="header">Oefening 1</h5>
+                <div class="oefening1 blokje"></div>
+            </div>
+            <div class="col s9">
+                <ul class="collapsible">
+                    <li>
+                        <div class="collapsible-header">Oplossing</div>
+                        <div class="collapsible-body">
+                            <p><code>
+                            .oefening1 {<br>
+                            &emsp;transition: 2s, width 2s, height 1s;<br>
+                            }<br><br>
+
+                            .oefening1:hover {<br>
+                            &emsp;transform: rotate(360deg);<br>
+                            &emsp;width: 200px;<br>
+                            &emsp;height: 100px;<br>
+                            }
+                            </code></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="row">       
+            <div class="col s3">
+                <h5 class="header">Oefening 2</h5>
+                <div class="oefening2 blokje"></div>
+            </div>
+            <div class="col s9">
+                <ul class="collapsible">
+                    <li>
+                        <div class="collapsible-header">Oplossing</div>
+                        <div class="collapsible-body">
+                            <p><code>
+                            .oefening2 {<br>
+                            &emsp;transition: 2s;<br>
+                            }<br><br>
+
+                            .oefening2:hover {<br>
+                            &emsp;transform: scale(5, 3) skew(20deg, -20deg) translate(50px, 50px);<br>
+                            }
+                            </code></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="row">       
+            <div class="col s3">
+                <h5 class="header">Oefening 3</h5>
+                <div class="oefening3 blokje"></div>
+            </div>
+            <div class="col s9">
+                <ul class="collapsible">
+                    <li>
+                        <div class="collapsible-header">Oplossing</div>
+                        <div class="collapsible-body">
+                            <p><code>
+                            .oefening3{<br>
+                            &emsp;border: 5px solid #009cab;<br>
+                            &emsp;border-radius: 5px;<br>
+                            &emsp;transition: 2s;<br>
+                            }<br><br>
+
+                            .oefening3:hover{<br>
+                            &emsp;border-radius: 200px;<br>
+                            &emsp;opacity: 0.5;<br>
+                            &emsp;transform: rotateY(180deg) scale(2.5);<br>
+                            }
+                            </code></p>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
 
@@ -385,7 +474,7 @@
 	                        &emsp;animation-name: oef2-rijden; <br>
 	                        &emsp;animation-duration: 2s; <br>
 	                        &emsp;animation-iteration-count: infinite; <br>
-                            } <br>
+                            } <br> <br>
                             
                             @keyframes oef2-rijden { <br>
 	                        &emsp;0% {transform: translate(0px, 0px);} <br>

@@ -1,3 +1,4 @@
+/*basis*/
 .blokje {
     width: 100px;
     height: 100px;
@@ -10,25 +11,47 @@
     height: 300px;
 }
 
-.oefening1 {
-    transition: 2s, width 2s, height 1s !important;
+/*transitions & transformations*/
+.transition{}
+
+.translate{}
+
+.rotate{}
+
+.scale{}
+
+.skew{}
+
+.rotateX{}
+
+/*oefeningen transitions & transformations*/
+.oefening1 {}
+
+.oefening1:hover {}
+
+.oefening2 {}
+
+.oefening2:hover {}
+
+.oefening3{
+    border: 5px solid red;
+    border-radius: 5px;
 }
 
-.oefening1:hover {
-    transform: rotate(360deg) !important;
-    width: 200px !important;
-    height: 100px !important;
+.oefening3:hover{
 }
 
-.oefening2 {
-    transition: 2s !important;
-}
+/*animations*/
+.vb1-animatie
 
-.oefening2:hover {
-    transform: scale(5, 3) skew(20deg, -20deg) translate(50px, 50px) !important;
+@keyframes vb1{}
 
-}
+/*oefening animations*/
+.oef-animation-1{}
 
+@keyframes oef1{}
+
+/*extra oefeningen*/
 .wiel {}
 
 .wiel1 {}
