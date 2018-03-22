@@ -161,3 +161,54 @@
         
     }
 }
+
+.wiel {
+	animation-name: oef2-draaien;
+	animation-duration: 0.5s;
+	animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.wiel1 {
+	position: relative;
+	left: -230px;
+	top: 20px;
+}
+
+.wiel2 {
+	position: relative;
+	left: -150px;
+	top: 20px;
+}
+
+.geheel {
+    position: relative;
+    bottom: 0px;
+	animation-name: oef2-rijden;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+#achtergrond {
+    padding-top:120px;
+	height:300px;
+	background-image:url(images/achtergrond.jpg);
+	background-repeat:repeat-x;
+}
+
+@keyframes oef2-rijden {
+	0% {
+		transform: translate(0px, 0px);
+	}
+	
+	100% {
+		transform: translate(1000px, 0px);
+	}
+}
+
+@keyframes oef2-draaien {
+	to {
+		transform: rotate(360deg);
+	}
+}
